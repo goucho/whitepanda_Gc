@@ -1,0 +1,672 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Default page</title>
+    <meta charset="utf-8">
+    <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
+    <meta content="Default page" name="description">
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i&amp;subset=cyrillic,cyrillic-ext,greek,greek-ext,latin-ext,vietnamese" rel="stylesheet">
+    
+    
+
+   <link href="css/style.css" rel="stylesheet" type="text/css">
+    
+    <style>
+        body {
+            font-family: 'Open Sans', 'Helvetica', sans-serif;
+            color: #000;
+            background-color:#FBFBFB
+;
+            padding: 0;
+            margin: 0;
+            line-height: 1.428;
+        }
+        h1, h2, h3, h4, h5, h6, p {
+            padding: 0;
+            margin: 0;
+            color:#333333;
+        }
+        h1 {
+            font-size: 30px;
+            font-weight: 600!important;
+            color: #333;
+        }
+        h2 {
+            font-size: 24px;
+            font-weight: 600;
+        }
+        h3 {
+            font-size: 22px;
+            font-weight: 600;
+            line-height: 28px;
+        }
+        hr {
+            margin-top: 35px;
+            margin-bottom: 35px;
+            border: 0;
+            border-top: 1px solid #bfbebe;
+        }
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+        li {
+            display: inline-block;
+            float: right;
+            margin-left: 20px;
+            line-height: 35px;
+            font-weight: 100;
+        }
+        a {
+            text-decoration: none;
+            cursor: pointer;
+            -webkit-transition: all .3s ease-in-out;
+            -moz-transition: all .3s ease-in-out;
+            -ms-transition: all .3s ease-in-out;
+            -o-transition: all .3s ease-in-out;
+            transition: all .3s ease-in-out;
+        }
+        li a {
+            color: white;
+            margin-left: 3px;
+        }
+        li > i {
+            color: white;
+        }
+        .column-wrap a {
+            color: #5c34c2;
+            font-weight: 600;
+            font-size:16px;
+            line-height:24px;
+        }
+        .column-wrap p {
+            color: #717171;
+            font-size:16px;
+            line-height:24px;
+            font-weight:300;
+        }
+        .container {
+            margin-top: 100px;
+        }
+        
+    
+
+.sidenav {
+  height: 100%;
+  width: 90px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #fff;
+  overflow-x: hidden;
+  padding-top: 100px;
+ box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.1);
+  
+}
+
+.sidenav a {
+  margin-top:10px; 
+  margin-left:35px;
+  padding: 15px 15px 6px 16px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+   border-right: solid 4px #5DDDB2;
+ 
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.main {
+  margin-left: 800px;
+  font-size: 28px; 
+  padding: 0px 10px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+.navbar
+{
+    margin-left:90px;
+    border-radius:0;
+    box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.1);
+    height:60px;
+}
+
+#profile-img
+{
+    margin-top:10px;
+    border-radius:50%;
+    max-width: 40px;
+  height: 40px;
+}
+.navbar-right-elements
+{
+    margin-right:150px;
+}
+
+.glyphicon-bell
+{
+    font-size:30px;
+    color:black;
+}
+.badge-notify{
+   background:red;
+   position:absolute;
+   bottom:20px;
+   left:18px;
+   border-radius:50%;
+  }
+  .content
+  {
+      background-color:#F4F9F7;
+      padding: 35px 35px 20px 46px;
+      
+  }
+  #sent
+  {
+      line-height: 1.6;
+  }
+  
+  .btn {
+  border: 1px solid black;
+  background-color: white;
+  color: black;
+  padding: 10px 14px;
+  font-size: 13px;
+  cursor: pointer;
+}
+
+/* Green */
+.success {
+  border-color: #4CAF50;
+  color: green;
+}
+
+  
+#about {
+
+  background-size: cover;
+  padding: 60px 0 40px 0;
+  position: relative;
+}
+
+
+.about-col
+{
+    padding: 40px 30px 30px 30px;
+}
+#about .container {
+  position: relative;
+  
+  z-index: 10;
+}
+
+#about .about-col .img {
+  position: relative;
+}
+
+#about .about-col .img img {
+  border-radius: 4px 4px 0 0;
+}
+
+#about .about-col .icon {
+  width: 64px;
+  height: 64px;
+  padding-top: 8px;
+  margin-bottom:18px;
+  margin-left:40px;
+  text-align: center;
+  position: absolute;
+  background-color:#5DDDB2;
+  border-radius: 50%;
+  border: 4px solid #fff;
+  
+  bottom: -30px;
+ 
+}
+#about .about-col .icon-exp {
+  width: 64px;
+  height: 64px;
+  padding-top: 8px;
+  margin-bottom:18px;
+  margin-left:40px;
+  text-align: center;
+  position: absolute;
+  background-color: #3394BD;
+  border-radius: 50%;
+  border: 4px solid #fff;
+  box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.1);
+  bottom: -30px;
+ 
+}
+#about .about-col i {
+  font-size: 36px;
+  line-height: 1;
+  color: #fff;
+  
+}
+
+
+
+#about .about-col h2 {
+  color: #000;
+  text-align: center;
+  font-weight: 700;
+  font-size: 15px;
+  padding: 0;
+  margin: 40px 0 12px 0;
+}
+
+#about .about-col h2 a {
+  color: #000;
+}
+
+
+#about .about-col p {
+  font-size: 14px;
+  line-height: 24px;
+  color: #000;
+  margin-bottom: 0;
+  padding: 0 20px 20px 20px;
+}
+
+
+#footer {
+  background: #fff;
+  box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.1);
+  padding: 30px 20px;
+  color: #333;
+  font-size: 14px;
+}
+
+#footer .credits {
+  font-size: 13px;
+  color: #888;
+}
+
+#footer .footer-links a {
+  color: #666;
+  padding-left: 15px;
+}
+
+#footer .footer-links a:first-child {
+  padding-left: 0;
+}
+
+#footer .footer-links a:hover {
+  color: #DC3D3D;
+}
+
+
+a.btn-social,
+.btn-social
+{
+   
+    border-radius: 50%;
+    color: grey !important;
+    display: inline-block;
+    height: 54px;
+    line-height: 54px;
+    margin: 8px 4px;
+    text-align: center;
+    text-decoration: none;
+    transition: background-color .3s;
+    webkit-transition: background-color .3s;
+    width: 54px;
+}
+.btn-twitter
+{
+  font-size:30px;   
+}
+.btn-facebook{
+    font-size:30px;
+}
+.btn-instagram
+{
+    font-size:30px;
+}
+    .btn-linkedin
+    {
+        font-size:30px;
+    }
+    .difffffff
+    {
+         box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.1);
+         background-color:white;
+    }
+
+      </style>
+</head>
+
+<body>
+
+
+<nav class="navbar ">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#"><img style=" width:140px; height:45px; margin-left:20px;"src="img/logo.png"></a>
+    </div>
+    
+    <ul class="nav navbar-nav navbar-right navbar-right-elements">
+      <li><a href="#"><span class="glyphicon glyphicon-bell"><span class="badge badge-notify">99</span></span>
+      
+      </a></li>
+      <li><img id="profile-img" src="img/ab.jpg" alt="Avatar"></a></li>
+    </ul>
+  </div>
+</nav>
+
+
+<div class="sidenav">
+  <a href="#home"><i class="glyphicon glyphicon-th-large"></i> </a>
+  <a href="#services"><i class="fa fa-search"></i> </a>
+  <a href="#clients"><i class="fa fa-home"></i> </a>
+ 
+</div>
+
+
+<div class="container">
+          <h2 style="color:black; z-index:100; font-size:40px;">Content Store</h2>
+<br>
+<div class="container  content">
+  <h3 style="color:#5DDDB2;">'Got bulk orders or almost similar orders? Fill the order brief in an excel sheet'</h3>
+ <br>
+ <br>
+ 
+  <h5 id="sent">
+
+if you're wondering about an easy way to place orders in large numbers, we provide a way customized just for that. Download our excel sheet , and fill the order brief in the 
+prescribed format and submit.In case you need any help, <u>we are just a click away to assist you in placing your order</u></h5>
+<br>
+<button type="button" class="btn success">Order via Excel Sheet</button>
+
+</div>
+      
+    </div>
+
+
+
+
+<div class="container " id="about">
+        <div class="row about-cols main-section">
+
+          <div class="col-md-4 wow ">
+            <div class="about-col">
+              <div class="img">
+                
+                <div class="icon"><i class="ion-ios-speedometer-outline"></i></div>
+              
+              
+              <h2 class="title"><a href="#">Blog/Article<br>from $500</a></h2>
+              </div>
+              <br>
+              <p>Typically 450-400 words,an e-book is<br> perfect for your target audience ranging<br>from prospective customers to users
+         
+    <br>
+              </p>
+              <br>
+              <button style="margin-left:25px;" type="button" class="btn success">Order </button>
+            </div>
+          </div>
+
+          <div class="col-md-4 wow  difffffff" >
+            <div class="about-col">
+             <div class="img">
+                
+                <div class="icon-exp"><i class="ion-ios-speedometer-outline"></i></div>
+              
+              
+              <h2 class="title"><a href="#">Newsletter<br>from $1000</a></h2>
+              </div>
+              <br>
+              <p>
+               Typically 450-400 words,an e-book is<br> perfect for your target audience ranging<br>from prospective customers to users
+              </p>
+              <br>
+              <button style="margin-left:25px;" type="button" class="btn success">Order </button>
+            </div>
+          </div>
+
+          <div class="col-md-4 wow fadeInUp" >
+            <div class="about-col">
+             <div class="img">
+                
+                <div class="icon"><i class="ion-ios-speedometer-outline"></i></div>
+              
+              
+              <h2 class="title"><a href="#">Whitepaper<br>from $2000</a></h2>
+              </div>
+              <br>
+              <p>
+                Typically 450-400 words,an e-book is<br> perfect for your target audience ranging<br>from prospective customers to users
+              </p>
+              <br>
+              <button style="margin-left:25px;" type="button" class="btn success">Order </button>
+            </div>
+          </div>
+
+        </div>
+
+      </div>    
+      
+<div class="container " id="about">
+        <div class="row about-cols main-section">
+
+          <div class="col-md-4 wow ">
+            <div class="about-col">
+              <div class="img">
+                
+                <div class="icon"><i class="ion-ios-speedometer-outline"></i></div>
+              
+              
+              <h2 class="title"><a href="#">e-book</a><br>from $100</a></h2>
+              </div>
+              <br>
+              <p>Typically 450-400 words,an e-book is<br> perfect for your target audience ranging<br>from prospective customers to users
+         
+    <br>
+              </p>
+              <br>
+              <button style="margin-left:25px;" type="button" class="btn success">Order </button>
+            </div>
+          </div>
+
+          <div class="col-md-4 wow " >
+            <div class="about-col">
+             <div class="img">
+                
+                <div class="icon"><i class="ion-ios-speedometer-outline"></i></div>
+              
+              
+              <h2 class="title"><a href="#">Report/Guide<br>from $1000</a></h2>
+              </div>
+              <br>
+              <p>
+               Typically 450-400 words,an e-book is<br> perfect for your target audience ranging<br>from prospective customers to users
+              </p>
+              <br>
+              <button style="margin-left:25px;" type="button" class="btn success">Order </button>
+            </div>
+          </div>
+
+          <div class="col-md-4 wow " >
+            <div class="about-col">
+             <div class="img">
+                
+                <div class="icon"><i class="ion-ios-speedometer-outline"></i></div>
+              
+              
+              <h2 class="title"><a href="#">Product Description<br>from $500</a></h2>
+              </div>
+              <br>
+              <p>
+                Typically 450-400 words,an e-book is<br> perfect for your target audience ranging<br>from prospective customers to users
+              </p>
+              <br>
+              <button style="margin-left:25px;" type="button" class="btn success">Order </button>
+            </div>
+          </div>
+
+        </div>
+
+      </div>  
+      
+      
+<div class="container " id="about">
+        <div class="row about-cols main-section">
+
+          <div class="col-md-4 wow ">
+            <div class="about-col">
+              <div class="img">
+                
+                <div class="icon"><i class="ion-ios-speedometer-outline"></i></div>
+              
+              
+              <h2 class="title"><a href="#">Website Content<br>from $1000</a></h2>
+              </div>
+              <br>
+              <p>Typically 450-400 words,an e-book is<br> perfect for your target audience ranging<br>from prospective customers to users
+         
+    <br>
+              </p>
+              <br>
+              <button style="margin-left:25px;" type="button" class="btn success">Order </button>
+            </div>
+          </div>
+
+          <div class="col-md-4 wow " >
+            <div class="about-col">
+             <div class="img">
+                
+                <div class="icon"><i class="ion-ios-speedometer-outline"></i></div>
+              
+              
+              <h2 class="title"><a href="#"></a>Video Script<br> from $1000</h2>
+              </div>
+              <br>
+              <p>
+               Typically 450-400 words,an e-book is<br> perfect for your target audience ranging<br>from prospective customers to users
+              </p>
+              <br>
+              <button style="margin-left:25px;" type="button" class="btn success">Order </button>
+            </div>
+          </div>
+
+          <div class="col-md-4 wow " >
+            <div class="about-col">
+             <div class="img">
+                
+                <div class="icon"><i class="ion-ios-speedometer-outline"></i></div>
+              
+              
+              <h2 class="title"><a href="#">Company Profile/<br>Brochure<br>from $2000</a></h2>
+              </div>
+              <br>
+              <p>
+                Typically 450-400 words,an e-book is<br> perfect for your target audience ranging<br>from prospective customers to users
+              </p>
+              <br>
+              <button style="margin-left:25px;" type="button" class="btn success">Order </button>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+      
+            
+<div class="container " id="about">
+        <div class="row about-cols main-section">
+
+          <div class="col-md-4 wow ">
+            <div class="about-col">
+              <div class="img">
+                
+                <div class="icon"><i class="ion-ios-speedometer-outline"></i></div>
+              
+              
+              <h2 class="title"><a href="#">Press Release<br>from $2000</a></h2>
+              </div>
+              <br>
+              <p>Typically 450-400 words,an e-book is<br> perfect for your target audience ranging<br>from prospective customers to users
+         
+    <br>
+              </p>
+              <br>
+              <button style="margin-left:25px;" type="button" class="btn success">Order </button>
+            </div>
+          </div>
+
+          </div>
+
+
+        </div>
+
+      </div>
+      
+<footer id="footer">
+    <div class="container">
+        <div align="center" class="row ">
+  
+    <div class="col-md-12">
+
+        <a href="" target="_blank" class="btn-social btn-twitter"><i class="fa fa-twitter"></i></a>
+        <a href="" target="_blank" class="btn-social btn-facebook"><i class="fa fa-facebook"></i></a>
+       
+        <a href="" target="_blank" class="btn-social btn-instagram"><i class="fa fa-instagram"></i></a>
+ 
+        <a href="" target="_blank" class="btn-social btn-linkedin"><i class="fa fa-linkedin"></i></a>
+       
+    
+    </div>
+
+
+</div>
+<br>
+<br>
+      <div class="row">
+        <div class="col-lg-6 text-lg-left text-center">
+          <div>
+            Made by <strong>Gourab Chowdhury</strong>
+            <br>
+            Contact: cggourabchowdhury@gmail.com
+          </div>
+          
+        </div>
+        <div class="col-lg-6">
+          <nav class="footer-links text-lg-right text-center pt-2 pt-lg-0">
+            <a href="" >Privacy Policy </a>|
+            <a href="" >Terms of Service </a>|
+            <a href="" >Service Agremment </a>|
+            <a href="" >Contact Us </a>
+          
+          </nav>
+        </div>
+      </div>
+    </div>
+  </footer>
+<script>
+    var pathName = window.location.hostname;
+    var account = document.getElementById("pathName");
+    var accountText = document.getElementById("website");
+    account.innerHTML = pathName;
+    accountText.innerHTML = pathName;
+</script>
+</body>
+
+</html>
